@@ -1,20 +1,128 @@
 <!DOCTYPE html>
 <head>
 <style>
-    .thumbnail{
-        width:300px;
-        border-radius:50%;
-        
+    .container-Main{
+        width:420px;
+        padding:12px;
     }
-    .searchbox{
-        font-size: 20px;
-        margin-left:12px;
+    .container-profilepic{
+        width: 60px;
+        display: inline-block;
+        vertical-align: middle;
     }
+    .container-profilepic img{
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        object-fit: cover;
+    }
+    .container-profilepic img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .container-Details{
+        display: inline-block;
+        width: 200px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .container-Details p{
+        margin: 0px;
+        font-size: 13px;
+        font-family: arial;
+    }
+    .Name{
+        font-weight:bold;
+    }
+    .subtitle, 
+    .status{
+        color:grey;
+    }
+    .container-button{
+         display: inline-block;
+         width: 100px;
+         text-align: right;
+         vertical-align: middle;
+    }
+    .followbutton{
+        background-color: #1da1f2;
+        color: white;
+        border: none;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition:background-color 0.15s,transform 0.15s ;
+    }
+    .followbutton:hover{
+        background-color: #4cb3f4;
+    }
+    .followbutton:active{
+        transform: translateY(5px);
+    }
+
 </style>
 </head>
 <body>
-    <img class = "thumbnail" 
-    src="Assets/thumbnail-1.webp">
-    <input Class="searchbox"type="text" placeholder="Search">
+<div class="container-Main">
+    <div class="container-profilepic">
+        <img src="Assets/cat.jpg" alt="">
+    </div>
+    <div class="container-Details">
+        <p class="Name">Oliver</p>
+        <p class="subtitle">The cat</p>
+        <p class="status">Popular</p>
+    </div>
+    <div class="container-button">
+        <button class="followbutton">
+            Follow
+        </button>
+    </div>
+</div>
+<div class="container-Main">
+    <div class="container-profilepic">
+        <img src="Assets/cat2.jpg" alt="">
+    </div>
+    <div class="container-Details">
+        <p class="Name">Mimi</p>
+        <p class="subtitle">The ginger cat</p>
+        <p class="status">Popular</p>
+    </div>
+    <div class="container-button">
+        <button class="followbutton">
+            Follow
+        </button>
+    </div>
+</div>
+<div class="container-Main">
+    <div class="container-profilepic">
+        <img src="Assets/dog.jpg" alt="">
+    </div>
+    <div class="container-Details">
+        <p class="Name">Gayathry</p>
+        <p class="subtitle">The pug</p>
+        <p class="status">Popular</p>
+    </div>
+    <div class="container-button">
+        <button class="followbutton">
+            Follow
+        </button>
+    </div>
+</div>
+<div class="container-Main">
+    <div class="container-profilepic">
+        <img src="Assets/dog2.jpg" alt="">
+    </div>
+    <div class="container-Details">
+        <p class="Name">Augumayang</p>
+        <p class="subtitle">The super dog</p>
+        <p class="status">Popular +</p>
+    </div>
+    <div class="container-button">
+        <button class="followbutton">
+            Follow
+        </button>
+    </div>
+</div>
 </body>
 </html>
